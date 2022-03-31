@@ -13,6 +13,13 @@
 		90F76F9627F5C54A000D05BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F76F9527F5C54A000D05BA /* Assets.xcassets */; };
 		90F76F9927F5C54A000D05BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F76F9727F5C54A000D05BA /* LaunchScreen.storyboard */; };
 		90F76FA127F5C9A0000D05BA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F76FA027F5C9A0000D05BA /* ViewController.xib */; };
+		90F76FAF27F5DFC2000D05BA /* IntroductionContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F76FAD27F5DFC2000D05BA /* IntroductionContentViewController.swift */; };
+		90F76FB027F5DFC2000D05BA /* IntroductionContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F76FAE27F5DFC2000D05BA /* IntroductionContentViewController.xib */; };
+		90F76FB727F5EDA7000D05BA /* IntroductionPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F76FB527F5EDA6000D05BA /* IntroductionPageViewController.swift */; };
+		90F76FBB27F5F59D000D05BA /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F76FB927F5F59D000D05BA /* IntroductionViewController.swift */; };
+		90F76FBC27F5F59D000D05BA /* IntroductionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F76FBA27F5F59D000D05BA /* IntroductionViewController.xib */; };
+		90F76FBF27F5FB9F000D05BA /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F76FBE27F5FB9F000D05BA /* AppButton.swift */; };
+		90F76FC327F5FF46000D05BA /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F76FC227F5FF46000D05BA /* extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		90F76F9827F5C54A000D05BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90F76F9A27F5C54A000D05BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90F76FA027F5C9A0000D05BA /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		90F76FAD27F5DFC2000D05BA /* IntroductionContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionContentViewController.swift; sourceTree = "<group>"; };
+		90F76FAE27F5DFC2000D05BA /* IntroductionContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroductionContentViewController.xib; sourceTree = "<group>"; };
+		90F76FB527F5EDA6000D05BA /* IntroductionPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionPageViewController.swift; sourceTree = "<group>"; };
+		90F76FB927F5F59D000D05BA /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
+		90F76FBA27F5F59D000D05BA /* IntroductionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroductionViewController.xib; sourceTree = "<group>"; };
+		90F76FBE27F5FB9F000D05BA /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		90F76FC227F5FF46000D05BA /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,11 @@
 		90F76F8B27F5C548000D05BA /* vidio clone */ = {
 			isa = PBXGroup;
 			children = (
+				90F76FA627F5DCC7000D05BA /* domain */,
+				90F76FA527F5DCB4000D05BA /* utils */,
+				90F76FA427F5DC17000D05BA /* application */,
+				90F76FA327F5DC09000D05BA /* data */,
+				90F76FA227F5DBFE000D05BA /* presentation */,
 				90F76F8C27F5C548000D05BA /* AppDelegate.swift */,
 				90F76F8E27F5C548000D05BA /* SceneDelegate.swift */,
 				90F76F9027F5C548000D05BA /* ViewController.swift */,
@@ -65,6 +84,72 @@
 				90F76FA027F5C9A0000D05BA /* ViewController.xib */,
 			);
 			path = "vidio clone";
+			sourceTree = "<group>";
+		};
+		90F76FA227F5DBFE000D05BA /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				90F76FBD27F5FA38000D05BA /* custom */,
+				90F76FA827F5DCEB000D05BA /* authentication */,
+				90F76FA727F5DCD4000D05BA /* introduction */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		90F76FA327F5DC09000D05BA /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		90F76FA427F5DC17000D05BA /* application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		90F76FA527F5DCB4000D05BA /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				90F76FC227F5FF46000D05BA /* extension.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		90F76FA627F5DCC7000D05BA /* domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		90F76FA727F5DCD4000D05BA /* introduction */ = {
+			isa = PBXGroup;
+			children = (
+				90F76FAD27F5DFC2000D05BA /* IntroductionContentViewController.swift */,
+				90F76FAE27F5DFC2000D05BA /* IntroductionContentViewController.xib */,
+				90F76FB527F5EDA6000D05BA /* IntroductionPageViewController.swift */,
+				90F76FB927F5F59D000D05BA /* IntroductionViewController.swift */,
+				90F76FBA27F5F59D000D05BA /* IntroductionViewController.xib */,
+			);
+			path = introduction;
+			sourceTree = "<group>";
+		};
+		90F76FA827F5DCEB000D05BA /* authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = authentication;
+			sourceTree = "<group>";
+		};
+		90F76FBD27F5FA38000D05BA /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				90F76FBE27F5FB9F000D05BA /* AppButton.swift */,
+			);
+			path = custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +210,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F76FBC27F5F59D000D05BA /* IntroductionViewController.xib in Resources */,
 				90F76F9927F5C54A000D05BA /* LaunchScreen.storyboard in Resources */,
 				90F76FA127F5C9A0000D05BA /* ViewController.xib in Resources */,
+				90F76FB027F5DFC2000D05BA /* IntroductionContentViewController.xib in Resources */,
 				90F76F9627F5C54A000D05BA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +225,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F76FBF27F5FB9F000D05BA /* AppButton.swift in Sources */,
 				90F76F9127F5C548000D05BA /* ViewController.swift in Sources */,
+				90F76FC327F5FF46000D05BA /* extension.swift in Sources */,
 				90F76F8D27F5C548000D05BA /* AppDelegate.swift in Sources */,
 				90F76F8F27F5C548000D05BA /* SceneDelegate.swift in Sources */,
+				90F76FB727F5EDA7000D05BA /* IntroductionPageViewController.swift in Sources */,
+				90F76FBB27F5F59D000D05BA /* IntroductionViewController.swift in Sources */,
+				90F76FAF27F5DFC2000D05BA /* IntroductionContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

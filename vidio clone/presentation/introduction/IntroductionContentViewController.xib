@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroductionContentViewController" customModule="vidio_clone" customModuleProvider="target">
+            <connections>
+                <outlet property="contentImage" destination="PWR-fx-Smi" id="VdC-Xn-bKY"/>
+                <outlet property="descriptionLabel" destination="Xqs-fj-uxB" id="vTK-CG-e1Y"/>
+                <outlet property="titleLabel" destination="WWw-Ot-xZ6" id="Uj1-5g-N8I"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PWR-fx-Smi">
+                    <rect key="frame" x="0.0" y="44" width="414" height="673"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWw-Ot-xZ6">
+                    <rect key="frame" x="32" y="747" width="350" height="26.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqs-fj-uxB">
+                    <rect key="frame" x="16" y="781.5" width="382" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="secondaryLabelColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="WWw-Ot-xZ6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="22a-aV-8Ee"/>
+                <constraint firstItem="Xqs-fj-uxB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="7Lc-cY-j3h"/>
+                <constraint firstItem="PWR-fx-Smi" firstAttribute="height" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.35" id="9XV-SU-kdw"/>
+                <constraint firstItem="PWR-fx-Smi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="BgX-2c-2LL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Xqs-fj-uxB" secondAttribute="bottom" constant="60" id="PzJ-p4-Km2"/>
+                <constraint firstItem="WWw-Ot-xZ6" firstAttribute="top" secondItem="PWR-fx-Smi" secondAttribute="bottom" constant="30" id="RkC-KY-wwg"/>
+                <constraint firstItem="Xqs-fj-uxB" firstAttribute="top" secondItem="WWw-Ot-xZ6" secondAttribute="bottom" constant="8" id="Tu8-KN-EIf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xqs-fj-uxB" secondAttribute="trailing" constant="16" id="fSo-jp-Lju"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PWR-fx-Smi" secondAttribute="trailing" id="ipG-mP-24J"/>
+                <constraint firstItem="PWR-fx-Smi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="kLY-wq-h8f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WWw-Ot-xZ6" secondAttribute="trailing" constant="32" id="oRx-1L-OA5"/>
+                <constraint firstItem="WWw-Ot-xZ6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="pNk-JF-Cay"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="97"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
